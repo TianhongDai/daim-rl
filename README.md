@@ -11,7 +11,7 @@ Here is the official code for our paper - "Diversity-Augmented Intrinsic Motivat
 - mpi4py
 - cloudpickle
 
-## Install 
+## Installation
 1. Please install the required packages in the above list.  
 2. Install `rl_utils`:
 ```bash
