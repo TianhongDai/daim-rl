@@ -148,7 +148,7 @@ class ppo_agent:
             mb_values_mix = np.asarray(mb_values_mix, dtype=np.float32)
             mb_values_ex = np.asarray(mb_values_ex, dtype=np.float32)
             # calculate the r_in
-            mb_rewards_in = self._computer_intrinsic_rewards(mb_obs, mb_obs_)
+            mb_rewards_in = self._compute_intrinsic_rewards(mb_obs, mb_obs_)
             if self.args.env_type == 'mujoco':
                 mb_values_mix = np.expand_dims(mb_values_mix, 1)
                 mb_values_ex = np.expand_dims(mb_values_ex, 1)
@@ -222,7 +222,7 @@ class ppo_agent:
                     'rewards_in': np.mean(mb_rewards_in), 'rewards_ex': np.mean(mb_rewards_ex)}
             torch.save(log_data, '{}/{}.pt'.format(self.intrinsic_data_path, self.args.env_name))
 
-    def _computer_intrinsic_rewards(self, obs, obs_, requires_grad=False):
+    def _compute_intrinsic_rewards(self, obs, obs_, requires_grad=False):
         """
         this process will be super time-consuming
         """
@@ -289,7 +289,7 @@ class ppo_agent:
                 obs_tensor = torch.tensor(obs, dtype=torch.float32, device='cuda' if self.args.cuda else 'cpu')
                 actions_tensor = torch.tensor(actions, dtype=torch.float32, device='cuda' if self.args.cuda else 'cpu')
                 # calculate the r_in here
-                r_in_tensor = self._computer_intrinsic_rewards(obs, obs_, requires_grad=True)
+                r_in_tensor = self._compute_intrinsic_rewards(obs, obs_, requires_grad=True)
                 # r_in_tensor, _ = self.intrinsic_net(obs_tensor, actions_tensor)
                 r_ex_tensor = torch.tensor(rewards_ex, dtype=torch.float32, device='cuda' if self.args.cuda else 'cpu').unsqueeze(-1)
                 td_mix_tensor = torch.tensor(td_mix, dtype=torch.float32, device='cuda' if self.args.cuda else 'cpu').unsqueeze(-1)
