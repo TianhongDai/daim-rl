@@ -1,5 +1,5 @@
 # Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning
-Here is the official code for our paper - "Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning" (Under Review).
+Here is the official code for our paper - ["Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning"](https://www.sciencedirect.com/science/article/pii/S0925231221015265?via%3Dihub) [Neurocomputing, 2021].
 
 ## Requirements
 - ubuntu-16.04
@@ -19,3 +19,15 @@ pip install -e .
 ```
 ## Run Experiments
 Please enter `rl_algorithms/ppo` folder to run `PPO + DAIM`, and enter `rl_algorithms/a2c` folder to run `A2C + DAIM`.
+
+## BibTex
+To cite this code for publications - please use:
+```
+@article{dai2021diversity,
+    title={Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning},
+    author={Dai, Tianhong and Du, Yali and Fang, Meng and Bharath, Anil Anthony},
+    journal={Neurocomputing},
+    year={2021},
+    publisher={Elsevier}
+}
+```
