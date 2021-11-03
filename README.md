@@ -28,8 +28,8 @@ To cite this code for publications - please use:
     title={Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning},
     author={Dai, Tianhong and Du, Yali and Fang, Meng and Bharath, Anil Anthony},
     journal={Neurocomputing},
-    volume = {468},
-    pages = {396-406},
+    volume={468},
+    pages={396-406},
     year={2021},
     publisher={Elsevier}
 }
