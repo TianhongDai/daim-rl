@@ -1,6 +1,7 @@
 # Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning
-Here is the official code for our paper - ["Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning"](https://www.sciencedirect.com/science/article/pii/S0925231221015265?via%3Dihub) [Neurocomputing, 2021].
-
+Here is the official code for our paper - ["Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning"](https://www.sciencedirect.com/science/article/pii/S0925231221015265?via%3Dihub) [Neurocomputing 2021].
+## 
+![illustrations](figures/illustration.pdf)
 ## Requirements
 - ubuntu-16.04
 - cuda-10.0
@@ -27,6 +28,8 @@ To cite this code for publications - please use:
     title={Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning},
     author={Dai, Tianhong and Du, Yali and Fang, Meng and Bharath, Anil Anthony},
     journal={Neurocomputing},
+    volume = {468},
+    pages = {396-406},
     year={2021},
     publisher={Elsevier}
 }
