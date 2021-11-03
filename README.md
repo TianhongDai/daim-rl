@@ -1,7 +1,7 @@
 # Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning
 Here is the official code for our paper - ["Diversity-Augmented Intrinsic Motivation for Deep Reinforcement Learning"](https://www.sciencedirect.com/science/article/pii/S0925231221015265?via%3Dihub) [Neurocomputing 2021].
 ## 
-![illustrations](figures/illustration.pdf)
+![illustrations](figures/illustration.png)
 ## Requirements
 - ubuntu-16.04
 - cuda-10.0
